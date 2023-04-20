@@ -1,0 +1,216 @@
+@font-face {
+    font-family: prata;
+    src: url(./src/fonts/Prata-Regular.ttf);
+}
+
+@font-face {
+    font-family: worksans;
+    src: url(./src/fonts/WorkSans-Regular.ttf);
+}
+
+body {
+    background-image: url(./src/img/BackgroundImage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding-top: 40px;
+    padding-bottom: 50px;
+
+    position: relative;
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+}
+
+.stroke {
+    /* position: absolute; */
+    background-image: url(./src/img/stroke.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+    height: 100vh;
+}
+
+.stroke {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* height: 100vh; */
+}
+
+.logo-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-box>h1 {
+    font-family: prata;
+    font-weight: 400;
+    font-size: 35.8816px;
+    line-height: 49px;
+    color: #FFFFFF;
+
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section>h1 {
+    font-family: prata;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 95px;
+    color: #FFFFFF;
+    letter-spacing: 0.02em;
+
+    margin-bottom: 6px;
+}
+
+.main-section>span {
+    font-family: worksans;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.signup-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+}
+
+.signup-text>span {
+    font-family: worksans;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+
+    color: #FFFFFF;
+}
+
+.signup-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8.5px;
+}
+
+.signup-box input {
+    width: 279px;
+    height: 44px;
+
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+
+    padding-left: 14px;
+    outline: none;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.signup-box input::placeholder {
+    font-family: worksans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.01em;
+
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.signup-box button {
+    width: 123px;
+    height: 44px;
+
+    border: 1px solid #FFFFFF;
+
+    background-color: transparent;
+
+    font-family: worksans;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 14px;
+}
+
+@media (max-width: 425px) {
+
+    body {
+        background-image: url(./src/img/bg-imagemobile.png);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .stroke {
+        padding-bottom: 29px;
+    }
+
+    .logo-box>h1 {
+        font-size: 30.4993px;
+        line-height: 41px;
+    }
+
+    .main-section>h1 {
+        font-size: 50px;
+        line-height: 62px;
+
+        margin-bottom: 10px;
+    }
+
+    .main-section>span {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .signup-text {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .signup-text>span {
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+    }
+
+    .signup-box {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .signup-box input {
+        width: 100%;
+    }
+
+    .signup-box button {
+        width: 100%;
+    }
+
+    .btn-link {
+        width: 100%;
+    }
+
+}
