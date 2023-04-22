@@ -16,27 +16,44 @@ body {
     padding-top: 40px;
     padding-bottom: 50px;
 
-    position: relative;
+    margin: 0;
 
-    /* display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    display: flex;
     flex-direction: column;
-    justify-content: space-between; */
 }
 
-.stroke {
-    /* position: absolute; */
+/* .stroke {
     background-image: url(./src/img/stroke.png);
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 1;
     height: 100vh;
-}
+} */
 
 .stroke {
+    /* background-image: url(./src/img/stroke.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+}
+
+/* .stroke {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* height: 100vh; */
+} */
+
+.stroke-img img {
+    height: 100vh;
 }
 
 .logo-box {
@@ -44,6 +61,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    justify-content: space-between;
+
+    height: 100vh;
+
+    position: absolute;
 }
 
 .logo-box>h1 {
@@ -109,6 +132,7 @@ body {
 }
 
 .signup-box input {
+    box-sizing: border-box;
     width: 279px;
     height: 44px;
 
@@ -118,7 +142,9 @@ body {
     padding-left: 14px;
     outline: none;
     padding-top: 0;
+    padding-right: 0;
     padding-bottom: 0;
+
 }
 
 .signup-box input::placeholder {
@@ -163,8 +189,8 @@ body {
         background-size: cover;
     }
 
-    .stroke {
-        padding-bottom: 29px;
+    .stroke-img img {
+        width: 100%;
     }
 
     .logo-box>h1 {
@@ -201,15 +227,19 @@ body {
         width: 100%;
     }
 
+    /* .sgn-input {
+        width: 100%;
+    } */
+
     .signup-box input {
         width: 100%;
     }
 
-    .signup-box button {
+    .btn-link {
         width: 100%;
     }
 
-    .btn-link {
+    .btn-link button {
         width: 100%;
     }
 
